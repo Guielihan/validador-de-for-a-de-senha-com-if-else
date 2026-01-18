@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Validador de Força de Senha - Ferramenta interativa para verificar a segurança de suas senhas em tempo real">
+    <meta name="theme-color" content="#6366f1">
+    <title>Validador de Força de Senha</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="header__title">Validador de Força de Senha</h1>
+            <p class="header__subtitle">Descubra o quão segura é sua senha em tempo real</p>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <section class="content">
+            <!-- Card de Input -->
+            <div class="card">
+                <!-- Formulário -->
+                <form class="form" id="passwordForm">
+                    <div class="form__group">
+                        <label for="passwordInput" class="form__label">Digite sua senha:</label>
+                        <div class="password-input-wrapper">
+                            <input 
+                                type="password" 
+                                id="passwordInput" 
+                                class="form__input" 
+                                placeholder="Digite uma senha para validar"
+                                aria-label="Campo de entrada de senha"
+                            >
+                            <button 
+                                type="button" 
+                                class="password-toggle" 
+                                id="togglePassword"
+                                aria-label="Mostrar ou ocultar senha"
+                            >
+                                <span class="password-toggle__icon">👁️</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Barra de Progresso -->
+                    <div class="progress-section">
+                        <div class="progress-bar">
+                            <div class="progress-bar__fill" id="progressBarFill"></div>
+                        </div>
+                        <span class="progress-text" id="progressText">Insira uma senha</span>
+                    </div>
+
+                    <!-- Cards de Validação -->
+                    <div class="validation-cards">
+                        <div class="validation-card">
+                            <span class="validation-card__icon">📏</span>
+                            <span class="validation-card__label">Comprimento</span>
+                            <span class="validation-card__status" id="lengthCheck">-</span>
+                        </div>
+                        <div class="validation-card">
+                            <span class="validation-card__icon">🔤</span>
+                            <span class="validation-card__label">Letra</span>
+                            <span class="validation-card__status" id="letterCheck">-</span>
+                        </div>
+                        <div class="validation-card">
+                            <span class="validation-card__icon">🔢</span>
+                            <span class="validation-card__label">Número</span>
+                            <span class="validation-card__status" id="numberCheck">-</span>
+                        </div>
+                        <div class="validation-card">
+                            <span class="validation-card__icon">🔐</span>
+                            <span class="validation-card__label">Símbolo</span>
+                            <span class="validation-card__status" id="symbolCheck">-</span>
+                        </div>
+                    </div>
+
+                    <!-- Resultado -->
+                    <div class="result" id="resultContainer">
+                        <h2 class="result__title" id="resultTitle">Insira uma senha</h2>
+                        <p class="result__message" id="resultMessage">A força da sua senha aparecerá aqui</p>
+                    </div>
+
+                    <!-- Dicas de Segurança -->
+                    <div class="tips">
+                        <h3 class="tips__title">💡 Dicas para uma Senha Forte:</h3>
+                        <ul class="tips__list">
+                            <li>Use pelo menos 12 caracteres</li>
+                            <li>Combine letras maiúsculas e minúsculas</li>
+                            <li>Inclua números e símbolos especiais</li>
+                            <li>Evite informações pessoais óbvias</li>
+                            <li>Nunca reutilize senhas em múltiplos sites</li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer__text">🔒 Sua senha não é armazenada. Validação feita 100% localmente.</p>
+        </footer>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
