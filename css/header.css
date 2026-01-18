@@ -21,6 +21,7 @@
     font-weight: var(--font-weight-bold);
     margin-bottom: var(--spacing-md);
     letter-spacing: -0.5px;
+    color: #636875;
 }
 
 .header__subtitle {

@@ -18,11 +18,7 @@
     text-align: center;
 }
 
-.validation-card:hover {
-    border-color: var(--color-primary);
-    background: var(--color-primary-light);
-    transform: translateY(-2px);
-}
+
 
 .validation-card__icon {
     width: 28px;
@@ -100,7 +96,7 @@
         grid-template-columns: 1fr;
         gap: var(--spacing-sm);
     }
-    
+
     .validation-card {
         padding: var(--spacing-md);
     }

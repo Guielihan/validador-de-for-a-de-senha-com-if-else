@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Validador de Força de Senha - Ferramenta interativa para verificar a segurança de suas senhas em tempo real">
+    <meta name="description"
+        content="Validador de Força de Senha - Ferramenta interativa para verificar a segurança de suas senhas em tempo real">
     <meta name="theme-color" content="#6366f1">
-    <title>Validador de Força de Senha</title>
+    <title>Validador de senha - GoDevs</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <main class="container">
-            <header class="header">
+        <header class="header">
             <h1 class="header__title">Descubra o quão segura é sua senha em tempo real</h1>
         </header>
 
@@ -20,20 +23,12 @@
                     <div class="form__group">
                         <label for="passwordInput" class="form__label">Digite sua senha:</label>
                         <div class="password-input-wrapper">
-                            <input 
-                                type="password" 
-                                id="passwordInput" 
-                                class="form__input" 
-                                placeholder="Digite uma senha para validar"
-                                aria-label="Campo de entrada de senha"
-                            >
-                            <button 
-                                type="button" 
-                                class="password-toggle" 
-                                id="togglePassword"
-                                aria-label="Mostrar ou ocultar senha"
-                            >
-                                <svg class="password-toggle__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <input type="password" id="passwordInput" class="form__input"
+                                placeholder="Digite uma senha para validar" aria-label="Campo de entrada de senha">
+                            <button type="button" class="password-toggle" id="togglePassword"
+                                aria-label="Mostrar ou ocultar senha">
+                                <svg class="password-toggle__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
                                     <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                                     <circle cx="12" cy="12" r="3"></circle>
                                 </svg>
@@ -52,7 +47,8 @@
                     <!-- card de validacao -->
                     <div class="validation-cards">
                         <div class="validation-card">
-                            <svg class="validation-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg class="validation-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
                                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                                 <line x1="9" y1="9" x2="9" y2="9"></line>
                                 <line x1="12" y1="9" x2="12" y2="9"></line>
@@ -62,7 +58,8 @@
                             <span class="validation-card__status" id="lengthCheck">-</span>
                         </div>
                         <div class="validation-card">
-                            <svg class="validation-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg class="validation-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
                                 <path d="M4 4h16v16H4z"></path>
                                 <path d="M9 11h6"></path>
                             </svg>
@@ -70,7 +67,8 @@
                             <span class="validation-card__status" id="letterCheck">-</span>
                         </div>
                         <div class="validation-card">
-                            <svg class="validation-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg class="validation-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
                                 <circle cx="12" cy="12" r="1"></circle>
                                 <path d="M19.07 4.93L16 2"></path>
                                 <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
@@ -79,7 +77,8 @@
                             <span class="validation-card__status" id="numberCheck">-</span>
                         </div>
                         <div class="validation-card">
-                            <svg class="validation-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg class="validation-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
                                 <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
                                 <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                             </svg>
@@ -97,7 +96,8 @@
                     <!-- dicas de seguranca -->
                     <div class="tips">
                         <div class="tips__header">
-                            <svg class="tips__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg class="tips__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <line x1="12" y1="16" x2="12" y2="12"></line>
                                 <line x1="12" y1="8" x2="12.01" y2="8"></line>
@@ -126,6 +126,7 @@
         </footer>
     </main>
 
-    <script src="js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
 </body>
+
 </html>

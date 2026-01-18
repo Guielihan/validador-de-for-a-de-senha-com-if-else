@@ -1,13 +1,12 @@
 .footer {
     text-align: center;
-    color: var(--color-white);
+    color: #636875;
     font-size: var(--font-size-sm);
     margin-top: var(--spacing-xl);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: var(--spacing-md);
-    opacity: 0.9;
     animation: slideUp 0.6s ease-out;
 }
 
@@ -26,12 +25,14 @@
     width: 20px;
     height: 20px;
     flex-shrink: 0;
+    color: #636875;
 }
 
 .footer__text {
     margin: 0;
+    font-weight: var(--font-weight-medium);
 }
 
 .footer:hover {
-    opacity: 1;
+    color: #4f535d;
 }
