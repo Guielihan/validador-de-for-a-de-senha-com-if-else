@@ -1,6 +1,6 @@
 .validation-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: var(--spacing-md);
     margin-bottom: var(--spacing-xl);
 }
@@ -88,16 +88,35 @@
 @media (max-width: 768px) {
     .validation-cards {
         grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    .validation-cards {
-        grid-template-columns: 1fr;
         gap: var(--spacing-sm);
     }
 
     .validation-card {
         padding: var(--spacing-md);
+    }
+
+    .validation-card__icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .validation-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-sm);
+    }
+
+    .validation-card {
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+
+    .validation-card__label {
+        font-size: 0.65rem;
+    }
+
+    .validation-card__icon {
+        width: 22px;
+        height: 22px;
     }
 }

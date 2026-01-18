@@ -55,5 +55,15 @@
 @media (max-width: 480px) {
     .tips {
         padding: var(--spacing-md);
+        margin-top: var(--spacing-md);
+    }
+
+    .tips__title {
+        font-size: 0.7rem;
+    }
+
+    .tips__list li {
+        font-size: 0.75rem;
+        padding-left: var(--spacing-lg);
     }
 }
