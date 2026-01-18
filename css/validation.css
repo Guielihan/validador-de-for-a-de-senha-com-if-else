@@ -1,0 +1,107 @@
+.validation-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+}
+
+.validation-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-lg);
+    background: var(--color-bg);
+    border: 2px solid var(--color-border-light);
+    border-radius: var(--radius-lg);
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: center;
+}
+
+.validation-card:hover {
+    border-color: var(--color-primary);
+    background: var(--color-primary-light);
+    transform: translateY(-2px);
+}
+
+.validation-card__icon {
+    width: 28px;
+    height: 28px;
+    color: var(--color-text-secondary);
+    flex-shrink: 0;
+}
+
+.validation-card__icon svg {
+    width: 100%;
+    height: 100%;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2;
+}
+
+.validation-card__label {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.validation-card__status {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-light);
+    transition: color 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.validation-card__status.valid {
+    color: var(--color-success);
+}
+
+.validation-card__status.invalid {
+    color: var(--color-error);
+}
+
+.validation-card.active {
+    border-color: var(--color-primary);
+    background: var(--color-primary-light);
+}
+
+.validation-card.active .validation-card__icon {
+    color: var(--color-primary);
+}
+
+.validation-card.valid {
+    border-color: var(--color-success);
+    background: rgba(16, 185, 129, 0.1);
+}
+
+.validation-card.valid .validation-card__icon {
+    color: var(--color-success);
+}
+
+.validation-card.invalid {
+    border-color: var(--color-error);
+    background: rgba(239, 68, 68, 0.1);
+}
+
+.validation-card.invalid .validation-card__icon {
+    color: var(--color-error);
+}
+
+@media (max-width: 768px) {
+    .validation-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .validation-cards {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+    
+    .validation-card {
+        padding: var(--spacing-md);
+    }
+}

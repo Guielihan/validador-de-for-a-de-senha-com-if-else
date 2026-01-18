@@ -1,1 +1,14 @@
-/* Estilos para o validador de força de senha */
+@import url('./variables.css');
+
+@import url('./base.css');
+@import url('./layout.css');
+
+/* components */
+@import url('./header.css');
+@import url('./form.css');
+@import url('./progress.css');
+@import url('./validation.css');
+@import url('./result.css');
+@import url('./tips.css');
+@import url('./footer.css');
+@import url('./accessibility.css');

@@ -1,0 +1,34 @@
+    @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+.form__input:focus-visible,
+.password-toggle:focus-visible,
+a:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-text-primary: #f3f4f6;
+        --color-text-secondary: #d1d5db;
+        --color-text-light: #9ca3af;
+        --color-bg: #1f2937;
+        --color-bg-dark: #111827;
+        --color-white: #0f172a;
+        --color-border: #374151;
+        --color-border-light: #1f2937;
+    }
+    
+    .form__input {
+        background: var(--color-white);
+        color: var(--color-text-primary);
+    }
+}
